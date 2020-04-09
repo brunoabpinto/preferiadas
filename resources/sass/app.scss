@@ -127,6 +127,10 @@ h2 {
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
         border-radius: 100px;
+        img {
+            max-width: 60px;
+            margin-top: -15px;
+        }
     }
     .side-a {
         position: absolute;
