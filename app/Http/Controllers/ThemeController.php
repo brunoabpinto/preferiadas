@@ -11,7 +11,8 @@ class ThemeController extends Controller
     {
         $dom = file_get_contents('http://www.boardgamizer.com/themes');
         $words = DomParser::get_string_between($dom, '</h2>', '</div>');
-        return(view('words', ['words' => $words]));
+        $paragraphs = str_replace('<br>', '</span></p><p><span class="line">', '<p><span class="line">' . $words . '</span></p>');
+        return(view('words', ['words' => $paragraphs]));
     }
 
     public function theme()

@@ -27,6 +27,10 @@ flipCoin = function () {
     }, 100);
 }
 
+$('.words-container p').on('click', function () {
+    $(this).toggleClass('strike');
+})
+
 $('.theme-container p').on('click', function () {
     $(this).toggleClass('strike');
 })
