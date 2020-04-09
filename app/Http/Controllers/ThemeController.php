@@ -18,6 +18,7 @@ class ThemeController extends Controller
     {
         $dom = file_get_contents('https://www.seventhsanctum.com/generate.php?Genname=writechallenge');
         $theme = DomParser::get_string_between($dom, '<div class="GeneratorResultPrimeBGPara">', '</div>');
-        return(view('theme', ['theme' => str_replace('. ', '.<br><br>', $theme)]));
+        $paragraphs = str_replace('.', '.</span></p><p><span class="line">', '<p><span class="line">' . $theme . '</span></p>');
+        return(view('theme', ['theme' => $paragraphs]));
     }
 }

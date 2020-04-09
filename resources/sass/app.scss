@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
-
 body {
     font-family: 'Girassol', cursive;
 }
@@ -15,7 +14,7 @@ h2 {
         background: #e74c3c;
         position: absolute;
         bottom: -10px;
-        left: 40%;
+        left: calc(50% - 25px);
     }
 
 }
@@ -42,6 +41,9 @@ h2 {
         background: #e74c3c;
         color: #fff !important;
         transition: all .5s;
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(231, 75, 60, 0.5);
     }
 }
 .dice {
@@ -133,7 +135,7 @@ h2 {
     .side-b {
         transform: rotateY(-180deg);
         -webkit-transform: rotateY(-180deg);
-        background: black;
+        background: #222;
         color: #fff;
     }
     &.heads {
@@ -175,6 +177,17 @@ h2 {
     line-height: 30px;
     text-align: left;
     margin-bottom: 60px;
+    position: relative;
+    p {
+        cursor: pointer;
+        &.strike {
+            color: rgba(231, 76, 60, 0.9);
+            text-decoration: line-through;
+            .line {
+                color: #212529;
+            }
+        }
+    }
 }
 .footer-buttons {
     position: fixed;

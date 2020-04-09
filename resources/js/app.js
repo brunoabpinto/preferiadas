@@ -26,3 +26,7 @@ flipCoin = function () {
         $('.coin').addClass((result <= 0.5) ? 'heads' : 'tails');
     }, 100);
 }
+
+$('.theme-container p').on('click', function () {
+    $(this).toggleClass('strike');
+})
