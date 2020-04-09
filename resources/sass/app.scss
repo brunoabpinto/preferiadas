@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+body {
+    font-family: 'Girassol', cursive;
+}
+
+h2 {
+    color: #e74c3c;
+    position: relative;
+    margin-bottom: 40px;
+    &::after {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background: #e74c3c;
+        position: absolute;
+        bottom: -10px;
+        left: 40%;
+    }
+
+}
+.navbar {
+    background: #fafafa;
+    border-top: 2px solid #e74c3c;
+    padding: 0;
+    .navbar-brand {
+        margin: 0 auto;
+        img {
+            max-width: 50px;
+        }
+    }
+}
+.btn {
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    min-width: 150px;
+    padding: 4px;
+    &:hover {
+        background: #e74c3c;
+        color: #fff !important;
+        transition: all .5s;
+    }
+}
+.dice {
+    height: 100px;
+    width: 100px;
+    border: 3px solid #222;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-bottom: 60px;
+    .dice-value {
+        font-size: 50px;
+        height: 50px;
+        line-height: 100px;
+    }
+}
+.slider-value {
+    font-size: 22px;
+    padding: 0px 10px;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    border-radius: 50px;
+}
+.slidecontainer {
+    width: 100%;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 50px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: #e74c3c; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: #e74c3c; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+.coin {
+    height: 100px;
+    width: 100px;
+    border: 3px solid #222;
+    border-radius: 100px;
+    margin-bottom: 50px;
+    margin-bottom: 60px;
+    .coin-value {
+        font-size: 50px;
+        height: 50px;
+        line-height: 100px;
+    }
+}
+.words-container {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+.theme-container {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.footer-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    background: #fff;
+    .btn {
+        min-width: initial;
+        border-radius: 0 !important;
+        color: #e74c3c;
+        &.active {
+            color: #fff;
+            background: #e74c3c;
+        }
+    }
+}
