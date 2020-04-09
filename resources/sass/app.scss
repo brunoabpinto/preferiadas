@@ -32,10 +32,11 @@ h2 {
 .btn {
     border-radius: 50px;
     background: transparent;
-    border: 1px solid #e74c3c;
+    border: 2px solid #e74c3c;
     color: #e74c3c;
     min-width: 150px;
     padding: 4px;
+    font-size: 18px;
     &:hover {
         background: #e74c3c;
         color: #fff !important;
@@ -60,7 +61,7 @@ h2 {
     padding: 0px 10px;
     margin: 20px;
     display: inline-block;
-    border: 1px solid #e74c3c;
+    border: 2px solid #e74c3c;
     color: #e74c3c;
     border-radius: 50px;
 }
