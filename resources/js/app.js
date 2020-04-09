@@ -19,11 +19,10 @@ rollDice = function () {
 }
 
 flipCoin = function () {
-    var interval = setInterval(function () {
-        result = Math.floor(Math.random() * 2) ? 'H' : 'T';
-        $('.coin-value').text(result);
-    }, 80);
-    setTimeout(function () {
-        clearInterval(interval);
-    }, 2000)
+    var result = Math.random();
+    $('.coin').removeClass('heads');
+    $('.coin').removeClass('tails');
+    setTimeout(function(){
+        $('.coin').addClass((result <= 0.5) ? 'heads' : 'tails');
+    }, 100);
 }

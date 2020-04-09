@@ -5,7 +5,7 @@
 <div class="container text-center mt-5">
     <h2>DICE</h2>
     <div class="dice mx-auto">
-        <div class="dice-value">7</div>
+        <div class="dice-value">4</div>
     </div>
 
     <div class="form-group slidecontainer">
