@@ -13,17 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect('words');
-});
+Route::redirect('/', 'words');
 
-Route::get('/dice', function () {
-    return view('dice');
-});
+Route::view('/dice', 'dice');
 
-Route::get('/coin', function () {
-    return view('coin');
-});
+Route::view('/coin', 'coin');
 
 Route::get('/words', 'ThemeController@words');
 
