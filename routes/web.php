@@ -22,3 +22,5 @@ Route::view('/coin', 'coin');
 Route::get('/words', 'ThemeController@words');
 
 Route::get('/theme', 'ThemeController@theme');
+
+Route::get('/news', 'NewsController@index');

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 body {
     font-family: 'Girassol', cursive;
 }
@@ -218,5 +219,16 @@ h2 {
             color: #fff;
             background: #e74c3c;
         }
+    }
+}
+.article-container {
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+    a {
+        color: #000;
+    }
+    .image-container img {
+        max-width: 100%;
+        margin-bottom: 10px;
     }
 }
